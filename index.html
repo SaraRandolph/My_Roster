@@ -12,36 +12,43 @@
 <body>
  
 <!--Start Panel-->
-    <div class="container">
+    <div class="container-fluid" >
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">Sara's NFL Roster</h3>
             </div>
-            <div class="panel-body">
-                <div class="player-roster">
-                    <div class="player-card">
-                        <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" alt="default-player-image">
-                        <p>Player's Name:<span class="player-name"></span></p>
-                        <p>Player's Position:<span class="player-position"></span></p>
-                        <p>Player's Number:<span class="player-number"></span></p>
+            
+                <div class="panel-body">
+                    <div class="player-roster">
+                        <!--<div class="player-card">
+                            <button>Remove</button>
+                            <br>
+                            <img src="http://s.nflcdn.com/static/content/public/image/fantasy/transparent/200x200/" alt="default-player-image">
+                            <p class="player-name">Player's Name:</p>
+                            <p class="player-position">Player's Position:</p>
+                            <p class="player-number">Player's Number:</p>
+                        </div>-->    
                     </div>
-                </div>
-                <!--Start Form-->
-                <div class="player-form">
-                    <form>
-                        <input type="text" name="playerName" placeholder="Player Name">
-                        <input type="text" name="playerPosition" placeholder="Player Position">
-                        <input type="number" name="playerNumber" placeholder="Player Number">
-                        <button type="submit" id="addPlayer" value="add">Add Player</button>
-                    </form>
-                    
-                </div>
-            </div>
-        </div>
+                        <div class="panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title panel-danger">Add Player</h3>
+                            </div>
+                                <div class="player-form panel-body">
+                                    <form>
+                                        <input id="playerName" type="text" name="playerName" placeholder="Player Name">
+                                        <br>
+                                        <input id="playerPosition" type="text" name="playerPosition" placeholder="Player Position">
+                                        <br>
+                                        <input id="playerNumber" type="number" name="playerNumber" placeholder="Player Number">
+                                        <br>
+                                        <button type="submit" id="addPlayer" value="add">Add Player</button>
+                                    </form>      
+                                </div>
+                         </div>  
+                </div>    
+        </div>     
     </div>
-    
-    
-    
+           
 
 <!--JQuery-->
     <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
